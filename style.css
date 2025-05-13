@@ -417,6 +417,10 @@ HEADER
 /* ================================
    MOBİL MENÜ TOGGLE (Hamburger)
 ================================== */
+.mobile-menu{
+    display: none;
+}
+
 .mobile-menu-toggle {
     display: none;
     flex-direction: column;

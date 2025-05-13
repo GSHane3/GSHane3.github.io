@@ -381,7 +381,15 @@ window.onload = () => {
     initAOS();
 });
 
-document.querySelector('.mobile-menu-toggle').addEventListener('click', () => {
-    document.querySelector('.header').classList.toggle('mobile-menu-active');
-  });
+const header = document.querySelector('.header');
+const toggleButton = document.querySelector('.mobile-menu-toggle');
+const closeButton = document.querySelector('.mobile-menu-close');
+
+toggleButton.addEventListener('click', () => {
+  header.classList.toggle('mobile-menu-active');
+});
+
+closeButton.addEventListener('click', () => {
+  header.classList.remove('mobile-menu-active');
+});
 
